@@ -1,47 +1,134 @@
+ 
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #f5f7fa;
     color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+.btn {
+    background: white;
+    color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.btn:hover {
+    background: #0056b3;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #007bff;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    text-align: center;
+    padding: 60px 20px;
 }
 .container {
     width: 80%;
     margin: auto;
-    overflow: hidden;
 }
-header {
-    background: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-header .btn {
-    background: #fff;
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
     color: #007bff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
 }
-section {
-    padding: 20px 0;
-    text-align: center;
+
+/* Experience Section */
+.experience-item {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+.experience-item h3 {
+    color: #0056b3;
+}
+.experience-item p {
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+/* Skills */
 ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 ul li {
     background: #007bff;
-    color: #fff;
+    color: white;
     display: inline-block;
     padding: 10px 20px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
+    font-weight: bold;
 }
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+#contact a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 15px;
     background: #333;
     color: white;
     margin-top: 20px;
