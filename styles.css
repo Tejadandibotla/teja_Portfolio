@@ -1,135 +1,56 @@
- 
-/* Global Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f7fa;
-    color: #333;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teja Dandibotla - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
 
-/* Header Section */
-header {
-    background: linear-gradient(to right, #007bff, #0056b3);
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-    opacity: 0.8;
-}
-.btn {
-    background: white;
-    color: #007bff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-.btn:hover {
-    background: #0056b3;
-    color: white;
-}
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="dark-mode-toggle">🌙</button>
+    </nav>
 
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    background: #007bff;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-nav a:hover {
-    text-decoration: underline;
-}
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 id="typing-text">Hi, I'm <span>Teja Dandibotla</span></h1>
+            <p>Senior Product Manager | AI Enthusiast | Strategic Leader</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </header>
 
-/* Sections */
-section {
-    text-align: center;
-    padding: 60px 20px;
-}
-.container {
-    width: 80%;
-    margin: auto;
-}
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #007bff;
-}
+    <!-- About Section -->
+    <section id="about" class="glass">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Experienced Product Manager with expertise in AI, ML, SaaS, and B2B Commerce. Passionate about solving customer problems using data and technology.</p>
+        </div>
+    </section>
 
-/* Experience Section */
-.experience-item {
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-.experience-item h3 {
-    color: #0056b3;
-}
-.experience-item p {
-    font-size: 1em;
-    opacity: 0.8;
-}
+    <!-- Experience Section -->
+    <section id="experience" class="glass">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Senior Product Manager - ZöTok.AI</h3>
+                <p>2023 - Present</p>
+                <p>Leading AI-driven solutions in supply chain automation.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Product Manager - HealthifyMe</h3>
+                <p>2018 - 2023</p>
+                <p>Developed and launched innovative health-tech solutions.</p>
+            </div>
+        </div>
+    </section>
 
-/* Skills */
-ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-ul li {
-    background: #007bff;
-    color: white;
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Contact Section */
-#contact p {
-    font-size: 1.1em;
-    opacity: 0.8;
-}
-#contact a {
-    color: #007bff;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #333;
-    color: white;
-    margin-top: 20px;
-}
+    <!-- Skills Section -->
+    <section 
